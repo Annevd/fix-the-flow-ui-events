@@ -104,3 +104,13 @@ function negative(e) { // e staat voor event
     user.classList.toggle('negative') // toggle de .negative class
   }
 }
+
+// turn 'mouseover'
+
+let interface = document.querySelector('a:nth-of-type(10)')
+
+interface.addEventListener('mouseover', turn)
+
+function turn() {
+  interface.classList.toggle('turn')
+}

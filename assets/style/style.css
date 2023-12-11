@@ -176,3 +176,10 @@ a:nth-of-type(12) {
   75% {filter:invert(0);}
   100% {filter:invert(1);}
 }
+
+/* turn */
+.turn {
+  transition: 1s cubic-bezier(0.125, 0.500, 0.505, 1.250);
+  scale: 2;
+  rotate: 1turn;
+}
