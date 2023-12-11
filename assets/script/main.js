@@ -53,10 +53,11 @@ function shake() {
 
 let sprint = document.querySelector('a:nth-of-type(5)')
 
-sprint.addEventListener('keydown', flip)
+document.addEventListener('keydown', flip) // document omdat het over een toetsenbord gaat
 
-function flip(e) { //als je met je muis hovert over de knop en op 'e' klikt, flipt de knop
-  if (e.keyCode === 69) {
-    sprint.classList.toggle('flip')
+function flip(e) { // e staat voor event
+  if(e.key == "a"){ // als de key gelijk is aan 'a', doe dan dit:
+    console.log("we hebben een "+e.key) // om te testen
+    sprint.classList.toggle('flip') // toggle de .flip class
   }
 }
