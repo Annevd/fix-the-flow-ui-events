@@ -72,3 +72,12 @@ function blur() {
   fix.classList.toggle('blur')
 }
 
+// scale 'mousover'
+
+let the = document.querySelector('a:nth-of-type(7)')
+
+the.addEventListener('mouseover', scale)
+
+function scale() {
+  the.classList.toggle('scale')
+}

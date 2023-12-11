@@ -83,7 +83,7 @@ a:nth-of-type(12) {
 
 /* Rotate */
 .rotate {
-  rotate: 1turn;
+  rotate: 360deg;
   transition: 1s;
 }
 
@@ -130,4 +130,10 @@ a:nth-of-type(12) {
 .blur {
   transition: 5s ease-in-out ;
   filter:blur(100px);
+}
+
+/* scale */
+.scale {
+  transform: perspective(15em) translateZ(6em);
+  transition: 1s;
 }
