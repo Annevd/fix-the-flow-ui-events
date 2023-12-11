@@ -91,3 +91,16 @@ flow.addEventListener('dblclick', flicker)
 function flicker() {
   flow.classList.toggle('flicker')
 }
+
+// negative 'keydown'
+
+let user = document.querySelector('a:nth-of-type(9)')
+
+document.addEventListener('keydown', negative) //document omdat je toetsen klikt in het gehele document, niet 1 knop
+
+function negative(e) { // e staat voor event
+  if(e.key == "n") { // als de key gelijk is aan 'n', doe dan dit:
+    console.log("we hebben een "+e.key) // om te testen
+    user.classList.toggle('negative') // toggle de .negative class
+  }
+}
