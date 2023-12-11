@@ -119,3 +119,9 @@ a:nth-of-type(12) {
   75% { transform: rotate(-5deg);}
   100% { transform: rotate(0deg);}
 }
+
+/* Flip */
+.flip {
+  transition: 1s;
+  transform: perspective(15em) rotateY(360deg);
+}

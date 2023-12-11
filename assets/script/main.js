@@ -48,3 +48,15 @@ development.addEventListener('dblclick', shake)
 function shake() {
   development.classList.toggle('shake')
 }
+
+// flip 'keydown'
+
+let sprint = document.querySelector('a:nth-of-type(5)')
+
+sprint.addEventListener('keydown', flip)
+
+function flip(e) { //als je met je muis hovert over de knop en op 'e' klikt, flipt de knop
+  if (e.keyCode === 69) {
+    sprint.classList.toggle('flip')
+  }
+}
