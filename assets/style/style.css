@@ -126,14 +126,40 @@ a:nth-of-type(12) {
   transform: perspective(15em) rotateY(360deg);
 }
 
-/* blur */
+/* Blur */
 .blur {
   transition: 5s ease-in-out ;
   filter:blur(100px);
 }
 
-/* scale */
+/* Scale */
 .scale {
   transform: perspective(15em) translateZ(6em);
   transition: 1s;
 }
+
+/* Flicker */
+.flicker {
+  animation: flicker 0.1s steps(1,end) infinite;
+}
+
+@keyframes flicker {
+  25% {
+    background: blue;
+  }
+
+  50% {
+    background: purple;
+    color: white;
+  }
+
+  75% {
+    background: red;
+    color: white;
+  }
+
+  100% {
+    background: white;
+  }
+}
+

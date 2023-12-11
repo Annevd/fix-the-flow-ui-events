@@ -81,3 +81,13 @@ the.addEventListener('mouseover', scale)
 function scale() {
   the.classList.toggle('scale')
 }
+
+// flicker 'dblclick'
+
+let flow = document.querySelector('a:nth-of-type(8)')
+
+flow.addEventListener('dblclick', flicker)
+
+function flicker() {
+  flow.classList.toggle('flicker')
+}
