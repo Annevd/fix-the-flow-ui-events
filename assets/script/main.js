@@ -38,3 +38,13 @@ and.addEventListener('click', rainbow)
 function rainbow() {
   and.classList.toggle('rainbow')
 }
+
+// shake 'dblclick'
+
+let development = document.querySelector('a:nth-of-type(4)')
+
+development.addEventListener('dblclick', shake)
+
+function shake() {
+  development.classList.toggle('shake')
+}
