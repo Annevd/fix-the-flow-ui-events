@@ -28,3 +28,13 @@ design.addEventListener('click', background)
 function background() {
   design.classList.toggle('background')
 }
+
+// rainbow 'click'
+
+let and = document.querySelector('a:nth-of-type(3)')
+
+and.addEventListener('click', rainbow)
+
+function rainbow() {
+  and.classList.toggle('rainbow')
+}
