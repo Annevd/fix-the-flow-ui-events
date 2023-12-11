@@ -19,3 +19,12 @@ function rotate() {
   frontend.classList.toggle('rotate')
 }
 
+// background 'click'
+
+let design = document.querySelector('a:nth-of-type(2)')
+
+design.addEventListener('click', background)
+
+function background() {
+  design.classList.toggle('background')
+}

@@ -86,3 +86,10 @@ a:nth-of-type(12) {
   rotate: 1turn;
   transition: 1s;
 }
+
+/* Background */
+.background {
+  background-color:#ff00a8;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
