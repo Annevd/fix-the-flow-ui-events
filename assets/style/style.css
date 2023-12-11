@@ -125,3 +125,9 @@ a:nth-of-type(12) {
   transition: 1s;
   transform: perspective(15em) rotateY(360deg);
 }
+
+/* blur */
+.blur {
+  transition: 5s ease-in-out ;
+  filter:blur(100px);
+}

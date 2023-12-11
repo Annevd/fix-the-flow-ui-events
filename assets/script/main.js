@@ -56,8 +56,19 @@ let sprint = document.querySelector('a:nth-of-type(5)')
 document.addEventListener('keydown', flip) // document omdat het over een toetsenbord gaat
 
 function flip(e) { // e staat voor event
-  if(e.key == "a"){ // als de key gelijk is aan 'a', doe dan dit:
+  if(e.key == "a") { // als de key gelijk is aan 'a', doe dan dit:
     console.log("we hebben een "+e.key) // om te testen
     sprint.classList.toggle('flip') // toggle de .flip class
   }
 }
+
+// blur 'mouseover'
+
+let fix = document.querySelector('a:nth-of-type(6)')
+
+fix.addEventListener('mouseover', blur)
+
+function blur() {
+  fix.classList.toggle('blur')
+}
+
